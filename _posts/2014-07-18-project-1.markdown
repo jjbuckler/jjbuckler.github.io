@@ -1,0 +1,16 @@
+---
+title: ERS Food Atlas
+subtitle: Lead Developer
+layout: default
+modal-id: 1
+date: 2014-07-18
+img: foodatlas.png
+thumbnail: foodatlas-thumbnail.png
+alt: image-alt
+project-date: April 2014
+client: ERS
+category: Web Development
+description: ERS Food Environment Atlas.  This application shows factors that interact to influence food choice and diet quality across U.S. States and counties.  Originally written in C# (2011), the application has since been converted from C# to Adobe Flex, and finally JavaScript.  It is updated with new data yearly and contains over 200 individual map layers
+link: https://www.ers.usda.gov/data-products/food-environment-atlas/go-to-the-atlas/
+
+---

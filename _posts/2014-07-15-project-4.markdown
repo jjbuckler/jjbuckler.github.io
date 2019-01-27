@@ -1,0 +1,15 @@
+---
+title: NASS Ag Census Atlas
+subtitle: Lead Developer
+layout: default
+modal-id: 4
+date: 2014-07-17
+img: nass.png
+thumbnail: nass-thumbnail.png
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+description: The Ag Census Web Maps give researchers, policymakers, planners, lenders, agriculture agencies, agribusinesses, and farmers easy access to many factors that affect agriculture and farmers in more than 3,000 counties across the country.         
+link: https://www.nass.usda.gov/Publications/AgCensus/2012/Online_Resources/Ag_Census_Web_Maps/index.php
+---

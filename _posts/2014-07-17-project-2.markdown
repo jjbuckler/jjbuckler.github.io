@@ -1,0 +1,15 @@
+---
+title: Food Access Research Atlas
+subtitle: Lead Developer
+layout: default
+modal-id: 2
+date: 2014-07-17
+img: fara.png
+thumbnail: fara-thumbnail.png
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+description: Application showing food access indicators by census tract using different measures and indicators of supermarket accessibility.
+link: https://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas/
+---

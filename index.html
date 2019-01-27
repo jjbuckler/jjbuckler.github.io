@@ -1,105 +1,20 @@
-<html>
-  <head>
-    <title>John Buckler</title>
-    <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <!-- Modals -->
-    <div id="myModal" class="modal" onclick="handleClick(event)">
-      <span class="close">&times;</span>
-      <img class="modal-content"></img>
-    </div>
+---
+layout: default
+---
 
+<div class="home">
 
-    <!-- Navbar -->
-    <nav class="nav-bar">
-      <ul class="nav-bar__list">
-        <li class="nav-bar__link nav-bar__link-name"><a href="/">Projects</a></li>
-        <li class="nav-bar__link"><a href="/about">About Me</a></li>
-        <li class="nav-bar__link"><a href="/contact">Contact</a></li>
-       
-      </ul>
-    </nav>
+  <h1>Posts</h1>
 
-    <!-- Introduction -->
-    <div class="intro-wrapper">
-      <h1 class="intro-wrapper__header">John Buckler</h1>
-      <div class="intro-wrapper__section">
-        <p>
-          I'm a GIS/Web Developer with over 20 years experience.  Passionate about bring GIS technologies to the Web and advocating its use for data visualization.
-        </p>
-      </div>
-    </div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <div class="projects" onclick="handleClick(event)">
-      
-    <h2 class="">Examples of the projects I've worked on:</h2>
-      <!--  ERS Food Atlas-->
-      <div class="projects-row">
-        <div id="fAtlas" class="col-md-6">
-          <img class="projects-row__img" src="images/foodatlas.PNG" id="foodatlas" alt="Food Environment Atlas">
-        </div>
-        <div class="col-md-6">
-          <div class="project-information">
-            <h2 class="project-information__title">Food Environment Atlas</h2>
-           <!----<h3 class="project-information__heading">January 17, 2016 - Present<br></h3>-->
-            <h4 class="project-information__section-text"><b>Role</b>: Lead Developer</h4>
-            <p class="project-information__description">ERS Food Environment Atlas.  This application shows factors that interact to influence food choice and diet quality across U.S. States and counties.  Originally written in C# (2011), the application has since been converted from C# to Adobe Flex, and finally JavaScript.  It is updated with new data yearly and contains over 200 individual map layers.
-            </p>
-            <p>Helios Award for Communication Excellence (2011)</p>
-           
-            <!----<button type="button" class="project-information__btn"><a target="_blank" href="https://github.com/DrkSephy/es6-cheatsheet">Repo</a></button>-->
-            <p><b>Warning:  This application is currently down due to the partial government shutdown</b></p>
-            <button type="button" class="project-information__btn"><a target="_blank" href="https://www.ers.usda.gov/data-products/food-environment-atlas/go-to-the-atlas/">Go to the app</a></button>
-          </div>
-        </div>
-      </div>
-e
-      <!--  FARA -->
-      <div class="projects-row">
-        <div id="django-hackathon-starter" class="col-md-6">
-          <img class="projects-row__img" src="images/fara.PNG" id="fara" alt="Food Access Research Atlas">
-        </div>
-        <div class="col-md-6">
-          <div class="project-information">
-            <h2 class="project-information__title">Food Access Research Atlas (FARA)</h2>
-             <!----<h3 class="project-information__heading">January 17, 2016 - Present<br></h3>-->
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-            <h4 class="project-information__section-text"><b>Role</b>: Lead Developer</h4>
-            <p class="project-information__description">Application showing food access indicators by census tract using different measures and indicators of supermarket accessibility. Some notable achievements:
-              <ul class="project-information__ul">
-                <li>Currently has <b>over 1300 stars on Github</b></li>
-                <li>Previously featured on <a href="https://www.djangoproject.com/" target="_blank">Django Project</a></li>
-              </ul>
-
-            </p>
-            <p><b>Warning:  This application is currently down due to the partial government shutdown</b></p>
-            <button type="button" class="project-information__btn"><a target="_blank" href="https://www.ers.usda.gov/data-products/food-access-research-atlas/go-to-the-atlas/">Go to the app</a></button>
-          </div>
-        </div>
-      </div>
-
-      <!--  Rural Atlas -->
-      <div class="projects-row">
-        <div id="chronicles-of-the-abyss" class="col-md-6">
-          <img class="projects-row__img" src="images/rural.PNG" id="rural" alt="Rural Atlas">
-        </div>
-        <div class="col-md-6">
-          <div class="project-information">
-            <h2 class="project-information__title">ERS Rural Atlas</h2>
-              <!----<h3 class="project-information__heading">January 17, 2016 - Present<br></h3>-->
-            <p class="project-information__description">Mapping application showing the diversity of challenges and opportunities across America's counties.
-            
-            </p>
-            <p><b>Warning:  This application is currently down due to the partial government shutdown</b></p>
-            <button type="button" class="project-information__btn"><a target="_blank" href="https://www.ers.usda.gov/data-products/atlas-of-rural-and-small-town-america/go-to-the-atlas/">Go to the app</a></button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-    <script src="js/modal.js"></script>
-  </body>
-</html>
+</div>
